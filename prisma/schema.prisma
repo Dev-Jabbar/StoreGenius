@@ -115,6 +115,8 @@ model Size {
   @@index([storeId])
 }
 
+
+
 model Color {
   id          String   @id @default(uuid())
   storeId     String   // Foreign Key to Store
@@ -127,6 +129,9 @@ model Color {
 
   @@index([storeId])
 }
+
+
+
 
 model Image {
   id          String   @id @default(uuid())
